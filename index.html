@@ -97,10 +97,19 @@
           <div class="resume-content">
             <h3 class="mb-0">Long-range Forecasting of Droughts in the United States</h3>
             <div class="subheading mb-3">DSI Capstone Project</div>
-            <p>Gathered historical time series data related to droughts in the US and modeled the long-term national trends. Built a CNN model to predict the drought conditions on a localized level.
-              <br>
-              <a href="https://github.com/davidbertsch/DSI_Capstone_Modeling_Drought">Github Repo</a>
-              <br>
+            <p>For my final project with the Data Science program, I attempted to build a model to make forecasts for droughts. The US Drought Monitor has a robust set of data for drought conditions in the United States from 2000 to the present day, so I used that as the basis for my analysis. I performed a time series analysis of the national averages and I found that droughts are trending towards longer durations and more extreme levels. In order to build a model that could make localized predictions, I defined a square grid of latitude and longitude and mapped out the drought levels from 2000 to the present day. That way, the data was represented in a pixelated form that could be fed into a convolutional neural network like an image. If each point in the weekly time series was a single image, the input for predicting that data point was some combination of previous data points. For one model, the input was the previous 4 weeks, and for another model, the input was the data points from one week prior, one month prior, six months prior, and one year prior. These models are the basis for building a long-range localized forecast, which I hope to build by adding an LSTM layer to the neural network so that each prediction is fed back into the model as input moving forward into the future. These models were able to capture some of the seasonal cycles of droughts, as well as the locations in which droughts are most likely and least likely to occur, but the predictions were not accurate enough at each point in time in order to construct a meaningful long-range model.
+            <br>
+            Visualization of model predicitons (above) vs. actual data (below) spanning between 2014 and 2019:
+
+            <br>
+            <video width="960" height="720" controls>
+            <source src="./Predictions.mp4" type="video/mp4">
+            </video>
+            <br><br>
+            This is a work in progress, and I will continue to build on this moving forward.
+            <br><br>
+            <a href="https://github.com/davidbertsch/DSI_Capstone_Modeling_Drought">Project Homepage</a>
+            <br>
             </p>
           </div>
 
@@ -110,9 +119,9 @@
           <div class="resume-content">
             <h3 class="mb-0">Measuring the Economic Impact of Natural Disasters</h3>
             <div class="subheading mb-3">DSI Project 4</div>
-            <p>Gathered, cleaned, and analyzed time series data for wages and unemployment to measure the economic impact of a natural distaster using Hurricane Sandy and its affected localities as a case study.
+            <p>As part of a continuing partnership between General Assembly and New Light Technologies, our class was assigned a choice of several projects related to emergencies and natural disasters. We were assigned to groups of four in order to build practice working in a team environment. Teams were given free reign to frame the problems as they saw fit and were responsible for organizing and delegating the work amongst themselves. My team's task was to measure the impact of natural disasters on wages. We performed a case study of Hurricane Sandy and several relevant localities. We gathered data for wages broken down by industry as well as unemployment data, and we performed a time series analysis to determine how these metrics trended in the period immediately following the hurricane. We also collected and analyzed data on precipitation, barometric pressure, and wind speeds in order to construct a way of measuring the relative severity of storm conditions for the localities that we analyzed. The idea was to explore if the relative conditions of the storm were reflected in the relative economic impacts. We found that wages were stable in the face of this disaster, and we concluded that this was not a particularly useful metric to analyzing sudden fluctuations in economy. We found inconclusive evidence that unemployment increased as a result of Sandy in the localities with the most extreme conditions, but further case studies would be required in order to make meaningful insights and to establish a quantitative measurement for the economic impact of a disaster. Other economic metrics like total sales and damage claims might be useful to consider as alternatives to wages.
               <br>
-              <a href="https://github.com/davidbertsch/DSI_Project_4-Measuring_Economic_Impact_of_Hurricane_Sandy">Github Repo</a>
+              <a href="https://github.com/davidbertsch/DSI_Project_4-Measuring_Economic_Impact_of_Hurricane_Sandy">Project Homepage</a>
               <br>
             </p>
           </div>
@@ -122,9 +131,11 @@
           <div class="resume-content">
             <h3 class="mb-0">NLP Classification Model for Reddit Posts</h3>
             <div class="subheading mb-3">DSI Project 3</div>
-            <p>Used the Reddit API to scrape comments from the subreddits for the bands The Grateful Dead and Phish and used NLP to build a classification model to predict the subreddit of unseen posts.
-              <br>
-              <a href="https://github.com/davidbertsch/DSI_Project_3-NLP_Subreddit_Classification">Github Repo</a>
+            <p>In order to practice using Natural Language Processing tools, I scraped the Reddit API for comments from the subreddits for fans of the bands, The Grateful Dead and Phish. I built and compared several models, including logistic regression, naive Bayes, random forests, and support vector machines to predict the subreddit of origin for unseen posts with 90% accuracy. I then investigated the results to gain insights about the nature of posts that would be most susceptible to being misclassified. As someone who is passionate about this music, I couldn't imagine a more enjoyable way to introduce myself to NLP!
+              <br><br>
+              <a href="https://github.com/davidbertsch/DSI_Project_3-NLP_Subreddit_Classification">Project Homepage</a>
+              <br><br>
+              <a href="https://towardsdatascience.com/nlp-jam-the-grateful-dead-and-phish-4933063361d2">Summary Report</a>
               <br>
             </p>
           </div>
@@ -227,7 +238,7 @@
           Git<br>
           Command Line<br>
           SQL<br>
-          Jupyter Notebook<br>
+          Jupyter Notebook<br><br><br>
         </div>
 
         <div class="subheading mb-3">Statistical Analysis</div>
@@ -235,6 +246,8 @@
           Statsmodels<br>
           NLP<br>
           Time Series<br>
+          Neural Networks<br>
+          Bayesian Statistics<br><br><br>
         </div>
 
         <div class="subheading mb-3">Data Visualization</div>
